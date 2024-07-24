@@ -41,11 +41,12 @@
 }
 
 .logo {
-    padding: 16px 32px;
+    padding: 16px 0px;
     transition: opacity .7s;
     &:hover {
         opacity: .72;
     }
+    min-width: 91px;
 }
 
 .menu {
@@ -100,8 +101,8 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 80px 0px 16px 10px;
-     max-width: 1300px;
+     padding: 80px 25px 0 32px;
+     max-width: 1344px;
      margin: 0 auto;     
     }
     &__content {
@@ -113,8 +114,7 @@
     }
     &__content-item {
         display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
+        flex-direction: column;        
         flex: 1;
         height: 48%;
         }
@@ -133,3 +133,7 @@
         }
     }
 }
+
+
+
+@import 'media';
