@@ -33,20 +33,20 @@
         }
     }    
     &__btn-menu:hover {
+        height: 10px;
         & span {
             background-color: $gold;       
-        }
-        height: 10px;
+        }        
     }
 }
 
 .logo {
     padding: 16px 0px;
     transition: opacity .7s;
+    min-width: 91px;
     &:hover {
         opacity: .72;
-    }
-    min-width: 91px;
+    }    
 }
 
 .menu {
@@ -242,6 +242,55 @@
     }
 }
 
+.trends {
+    padding: 112px 0 112px 48px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+        padding-bottom: 48px;
+        & span {
+            color: $gold;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        justify-content: flex-end;
+        transition: color 1s ease; 
+        & path {
+        transition: stroke 1s ease;  
+        }  
+        & rect {
+            transition: stroke 1s ease;  
+            }  
+        &:hover {
+            color: $gold;        
+        & path {
+            stroke: $gold;            
+        }
+        & rect {
+            stroke: $gold;            
+        }
+        }
+    }
+}
+.about__slider {
+    padding-bottom: 20px;
+    width: 1800px;  
+    padding-left: 200px;
+    margin-left: -200px;  
+}
 
 
 @import 'media';
+@import '../../node_modules/swiper/swiper.scss'
