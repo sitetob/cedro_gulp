@@ -249,6 +249,17 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__fav path {
+        transition: fill .5s ease-in;
+    }
+    &__fav:hover path {
+        fill:#21242E;
+        fill-opacity: 0.4;
+    }
+    &__fav:active path {
+        fill:#D0BC7A;
+        fill-opacity: 1;
+    }
     &__title {
         font-weight: 500;
         font-size: 48px;
@@ -257,7 +268,7 @@
         padding-bottom: 48px;
         & span {
             color: $gold;
-        }
+        }        
     }
     &__link {
         font-weight: 500;
@@ -283,12 +294,85 @@
         }
         }
     }
+    &__item {
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        border: 1px solid #f7f7f7;
+        &:hover {
+            border: 1px solid rgba(33, 36, 46, 0.4);
+        }
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 24px;
+        }
+        &-img {
+            margin: 0 auto;
+        }
+        &-line-one {
+            background-color: #c08d74;
+            width: 100%;
+            height: 12px;
+            margin: 24px 0;
+        }
+        &-title {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1;
+            padding-bottom: 8px;
+            flex-basis: 100%;
+            transition: color .6s;
+            &:hover {
+                color: $gold;
+            }
+        }
+        
+        &-subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(33, 36, 46, 0.8);
+            padding-bottom: 8px;
+            flex-basis: 100%;
+            &:hover {
+                color: rgba(33, 36, 46, 1);
+            }
+        }
+        &-ml {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(33, 36, 46, 0.8);
+            padding-bottom: 16px;
+            flex-basis: 100%;
+        }
+        &-price {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 18px;
+            padding-right: 10px;
+        }
+        &-price-old {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: line-through;
+            color: rgba(33, 36, 46, 0.4);
+            margin-right: auto;
+        }   
+    }
+    &__sale {
+        background-color: #eb5757;
+        border-radius: 100px;
+        padding: 6px 12px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+    }
 }
-.about__slider {
-    padding-bottom: 20px;
-    width: 1800px;  
-    padding-left: 200px;
-    margin-left: -200px;  
+.trends__slider {
+    width: 120%;  
 }
 
 

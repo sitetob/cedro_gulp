@@ -6,7 +6,7 @@ $(function () {
         $('.popup-menu').addClass('popup-menu--close');
     });
 
-    const swiperAbout = new Swiper(".about__slider", {
+    const swiperTrends = new Swiper(".trends__slider", {
         slidesPerView: 5,
         spaceBetween: 32,
         freeMode: true,
