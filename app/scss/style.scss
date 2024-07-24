@@ -146,6 +146,9 @@
         text-transform: uppercase;
     &__list-item {
         padding-bottom: 12px;
+        &:hover {
+            color: $gold;
+        }
     }
     &__list-item--active {
         color: $gold;
