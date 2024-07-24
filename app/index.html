@@ -86,7 +86,48 @@
   </header>  
 
     <main class="main">
-
+    <div class="profile__wrapper">
+      <aside class="aside">
+        <nav class="aside-menu">
+          <ul class="aside-menu__list">
+            <li class="aside-menu__list-item aside-menu__list-item--active">
+              <a class="aside-menu__list-link" href="#!">Профиль</a>
+            </li>
+            <li class="aside-menu__list-item">
+              <a class="aside-menu__list-link" href="#!">Мои заказы</a>
+            </li>
+            <li class="aside-menu__list-item">
+              <a class="aside-menu__list-link" href="#!">выход</a>
+            </li>
+          </ul>      
+        </nav>
+      </aside>
+      <section class="profile">
+        <div class="profile__inner">
+          <h1 class="profile__title">Профиль</h1>
+        </div>
+        <div class="profile__line"></div>
+        <div class="profile__inner">
+          <h2 class="profile__subtitle">Данные профиля</h2>
+          <form class="profile__form" action="">
+            <label class="profile__form-title">ФИО
+              <input class="profile__form-input" placeholder="Алексеева Ульяна Евгеньевна" type="text">
+            </label>
+            <label class="profile__form-title">Почта
+              <input class="profile__form-input" placeholder="pochta07@mail.ru" type="email">
+            </label>
+            <label class="profile__form-title">Телефон
+            <input class="profile__form-input" placeholder="+7 (999) 999-99-99" type="tel">
+            </label>
+          </form>
+        </div>
+        <div class="profile__line"></div>
+        <div class="profile__inner">         
+            <button class="profile__form-btn" type="submit">Сохранить изменения</button>          
+        </div>
+      </section>      
+    </div>
+    <div class="profile__line"></div>   
     </main>
     <footer class="footer"></footer>
   </div>
