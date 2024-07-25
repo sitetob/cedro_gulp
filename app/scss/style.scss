@@ -377,9 +377,28 @@
         font-size: 14px;
         color: #fff;
     }
+    &__slider {
+        width: 130%;  
+    }
 }
-.trends__slider {
-    width: 130%;  
+
+.favorite {
+    position: relative;    
+    &-count {
+        opacity: 0;        
+        position: absolute;
+        right: 0px;
+        top: -2px;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 1;        
+        color: #fff;        
+        border-radius: 100px;
+        letter-spacing: -0.05em;
+        padding: 3px;
+        background-color: $default;
+        z-index: 1;
+    }
 }
 
 

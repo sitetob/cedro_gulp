@@ -7,6 +7,8 @@ $(function () {
     });
 
     const swiperTrends = new Swiper(".trends__slider", {
+        slidesPerView: 2,
+        spaceBetween: 8,        
         freeMode: true,
         loop: true,
         breakpoints: {
@@ -29,7 +31,17 @@ $(function () {
             530: {
                 slidesPerView: 2,
                 spaceBetween: 8,
+            },            
+            375: {
+                slidesPerView: 2,
+                spaceBetween: 8,
             },
           },
         });
+
+    $('.trends__fav').on('click',function(){
+        window.getComputedStyle('.favorite-count').setPropertyValue('opacity', 1);
+    });  
+        
+        
 });
