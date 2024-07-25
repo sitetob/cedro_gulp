@@ -1,9 +1,11 @@
 $(function () {
     $('.header__btn-menu').on('click',function(){
         $('.popup-menu').removeClass('popup-menu--close');
+        $('body').css('overflow','hidden');        
     });
     $('.popup-menu__close').on('click',function(){
         $('.popup-menu').addClass('popup-menu--close');
+        $('body').css('overflow','initial');
     });
 
     const swiperTrends = new Swiper(".trends__slider", {
@@ -40,8 +42,8 @@ $(function () {
         });
 
     $('.trends__fav').on('click',function(){
-        window.getComputedStyle('.favorite-count').setPropertyValue('opacity', 1);
-    });  
+        $('.favorite-nocount').toggleClass('favorite-count');
+    });
         
         
 });
