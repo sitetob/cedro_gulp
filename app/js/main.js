@@ -5,7 +5,8 @@ $(function () {
     });
     $('.popup-menu__close').on('click',function(){
         $('.popup-menu').addClass('popup-menu--close');
-        $('body').css('overflow','initial');
+        $('body').css('overflow-x','hidden');
+        $('body').css('overflow-y','auto');
     });
 
     const swiperTrends = new Swiper(".trends__slider", {
